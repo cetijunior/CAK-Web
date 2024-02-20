@@ -1,0 +1,15 @@
+[33m661c950[m[33m ([m[1;36mHEAD -> [m[1;32marchie[m[33m, [m[1;31morigin/archie[m[33m)[m HEAD@{0}: checkout: moving from main to archie
+[33m060238e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{1}: checkout: moving from archie to main
+[33m661c950[m[33m ([m[1;36mHEAD -> [m[1;32marchie[m[33m, [m[1;31morigin/archie[m[33m)[m HEAD@{2}: checkout: moving from main to archie
+[33m060238e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{3}: checkout: moving from e64caa785a369a5424eb9c6d8cfa8ca013be9311 to main
+[33me64caa7[m HEAD@{4}: commit: I fixed the folders
+[33m060238e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{5}: checkout: moving from archie to origin
+[33m661c950[m[33m ([m[1;36mHEAD -> [m[1;32marchie[m[33m, [m[1;31morigin/archie[m[33m)[m HEAD@{6}: commit (merge): Merge remote-tracking branch 'origin/main' into archie
+[33meab9417[m HEAD@{7}: checkout: moving from main to archie
+[33m060238e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{8}: checkout: moving from archie to main
+[33meab9417[m HEAD@{9}: checkout: moving from main to archie
+[33m060238e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{10}: commit: Added the frontend structure
+[33mbc1d12f[m[33m ([m[1;31morigin/cj[m[33m)[m HEAD@{11}: checkout: moving from archie to main
+[33meab9417[m HEAD@{12}: commit: I want 8grand
+[33mbc1d12f[m[33m ([m[1;31morigin/cj[m[33m)[m HEAD@{13}: checkout: moving from main to archie
+[33mbc1d12f[m[33m ([m[1;31morigin/cj[m[33m)[m HEAD@{14}: clone: from https://github.com/cetijunior/CAK-Web.git
