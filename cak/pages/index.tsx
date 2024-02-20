@@ -1,18 +1,20 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import About from "./About";
+import Contact from "./Contact";
+import Hero from "./Hero";
+import Navbar from "./Navbar";
+import Portfolio from "./Portfolio";
+import Services from "./Services";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p> I want 8grand
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-      </div>
+    <main>
+      <Navbar />
+      <Hero />
+      <Services />
+      <Portfolio /> 
+      <About />
+      <Contact />
     </main>
   );
 }
