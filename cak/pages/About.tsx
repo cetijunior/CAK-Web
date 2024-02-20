@@ -20,7 +20,7 @@ const About = () => {
       </div>
       <div className="text-center mt-12">
         <p className="text-lg">
-          Our team is dedicated to providing top-notch services tailored to our clients' needs. Explore our site to find out how we can help you achieve your goals.
+          Our team is dedicated to providing top-notch services tailored to our clients needs. Explore our site to find out how we can help you achieve your goals.
         </p>
       </div>
     </section>
