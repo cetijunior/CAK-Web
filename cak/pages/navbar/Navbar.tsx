@@ -36,10 +36,10 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
             </button>
             <div className="hidden md:flex gap-x-10 text-white">
               <ul className="flex gap-8">
-                <li><a href="#services" onClick={scrollToSection('#about')}><p>Services</p></a></li>
-                <li><a href="#portfolio" onClick={scrollToSection('#about')}><p>Portfolio</p></a></li>
+                <li><a href="#services" onClick={scrollToSection('#services')}><p>Services</p></a></li>
+                <li><a href="#portfolio" onClick={scrollToSection('#portfolio')}><p>Portfolio</p></a></li>
                 <li><a href="#about" onClick={scrollToSection('#about')}><p>About Us</p></a></li>
-                <li><a href="#contacts" onClick={scrollToSection('#about')}><p>Contacts</p></a></li>
+                <li><a href="#contacts" onClick={scrollToSection('#contacts')}><p>Contacts</p></a></li>
               </ul>
             </div>
           </div>

@@ -36,8 +36,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <section>
+    <section id='contacts'>
       <div className='bg-emerald-900 h-screen flex flex-col text-left md:flex-row max-w-full justify-center mx-auto items-center z-0'>
         <div className='flex flex-col space-y-10 mt-[100px]'>
           <h4 className='text-4xl font-semibold text-center text-white'>
@@ -57,15 +56,6 @@ const Contact: React.FC = () => {
               <p className='text-2xl text-white'>123 Main Street</p>
             </div>
           </div>
-=======
-    <section id='contact'>
-      <div>
-      Contact
-    </div>
-    </section>
-  )
-}
->>>>>>> 701d4d50032352e7f50433478b731ea39d415dbb
 
           <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
             <div className='flex space-x-2'>
