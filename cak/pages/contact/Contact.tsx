@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, Map, Mail } from '@mui/icons-material';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Footer from '../Footer/Footer';
+import { Props } from 'next/script';
 
 type Inputs = {
   name: string;
@@ -10,29 +11,11 @@ type Inputs = {
   message: string;
 };
 
-const Contact: React.FC = () => {
-  const { handleSubmit, register, reset } = useForm<Inputs>();
+function Contact({ }: Props) {
+  const { register, handleSubmit, reset } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = async (formData) => {
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        // If you want to perform some action on success, you can do it here
-        console.log('Form submitted successfully');
-        reset(); // Reset the form after successful submission
-      } else {
-        console.error('Failed to submit form');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    window.location.href = `mailto:pathfinders306@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;;
   };
 
   return (
@@ -42,14 +25,14 @@ const Contact: React.FC = () => {
           <h4 className='text-4xl font-semibold text-center text-white'>
             Want to hear more about us? <span className='underline decoration-emerald-300'>Lets Talk!</span>
           </h4>
-          <div className='space-y-5'>
+          <div className='flex flex-col space-x-8 sm:flex-row'>
             <div className='flex items-center space-x-5 justify-center'>
               <Phone className='text-emerald-300 h-7 w-7 animate-pulse' />
               <p className='text-2xl text-white'>+12343224</p>
             </div>
             <div className='flex items-center space-x-5 justify-center'>
               <Mail className='text-emerald-300 h-7 w-7 animate-pulse' />
-              <p className='text-2xl text-white'>email@example.com</p>
+              <p className='text-2xl text-white'>pathfinders306@gmail.com</p>
             </div>
             <div className='flex items-center space-x-5 justify-center'>
               <Map className='text-emerald-300 h-7 w-7 animate-pulse' />
