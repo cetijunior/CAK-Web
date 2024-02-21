@@ -4,12 +4,21 @@ import Link from "next/link";
 import Logo from "./Logo"; 
 
 const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean }) => {
+
+  const scrollToSection = (sectionId) => (e) => {
+    e.preventDefault();
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className="w-full h-20 bg-emerald-800 sticky top-0">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
-            <Logo />
+            <Logo/>
             <button
               type="button"
               className="inline-flex items-center md:hidden"
@@ -27,10 +36,10 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
             </button>
             <div className="hidden md:flex gap-x-10 text-white">
               <ul className="flex gap-8">
-                <li><Link href="/Services"><p>Services</p></Link></li>
-                <li><Link href="/Portfolio"><p>Portfolio</p></Link></li>
-                <li><Link href="/About"><p>About Us</p></Link></li>
-                <li><Link href="/Contact"><p>Contacts</p></Link></li>
+                <li><a href="#services" onClick={scrollToSection('#about')}><p>Services</p></a></li>
+                <li><a href="#portfolio" onClick={scrollToSection('#about')}><p>Portfolio</p></a></li>
+                <li><a href="#about" onClick={scrollToSection('#about')}><p>About Us</p></a></li>
+                <li><a href="#contacts" onClick={scrollToSection('#about')}><p>Contacts</p></a></li>
               </ul>
             </div>
           </div>

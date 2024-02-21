@@ -10,7 +10,7 @@ export const images = [
 
 const About = () => {
   return (
-    <section className="bg-emerald-900 mx-auto px-8 py-12 min-h-[600px]">
+    <section id="about" className="bg-emerald-900 mx-auto px-8 py-12 min-h-[600px]">
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-8">About Us</h1>
       <p className="text-lg md:text-xl text-center mb-12">
         Learn more about our journey, our team, and what drives us to deliver exceptional services.
