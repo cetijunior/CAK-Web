@@ -1,10 +1,12 @@
 import React from 'react';
 import {projects, Project } from './portfolioDb';
+import TestimonialsCarousel from '../testimonials/testimonialsCarousel';
 
 const Portfolio: React.FC = () => {
   return (
     <section id='portfolio'>
       <div className="container mx-auto px-4 py-8">
+        <h1 className='text-5xl p-5'>Portfolio</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {projects.map((project: Project) => (
             <div key={project.id} className="bg-emerald-800 rounded-lg shadow-lg overflow-hidden">
@@ -17,6 +19,7 @@ const Portfolio: React.FC = () => {
           ))}
         </div>
       </div>
+      <TestimonialsCarousel />
     </section>
      );
 };
