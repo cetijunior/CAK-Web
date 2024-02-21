@@ -1,11 +1,11 @@
 'use client'
 import { useEffect, useState } from "react";
-import About from "./About";
-import Contact from "./Contact";
-import Hero from "./Hero";
+import About from "./about/About";
+import Contact from "./contact/Contact";
+import Hero from "./Hero/Hero";
 import Navbar from "./navbar/Navbar";
-import Portfolio from "./Portfolio";
-import Services from "./Services";
+import Portfolio from "./portfolio/Portfolio";
+import Services from "./services/Services";
 import Link from "next/link";
 
 
