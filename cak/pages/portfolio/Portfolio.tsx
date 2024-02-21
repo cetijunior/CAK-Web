@@ -1,5 +1,5 @@
 import React from 'react';
-import {projects, Project } from './portfolioDb';
+import { projects, Project } from './portfolioDb';
 import TestimonialsCarousel from '../testimonials/testimonialsCarousel';
 
 const Portfolio: React.FC = () => {
@@ -21,7 +21,7 @@ const Portfolio: React.FC = () => {
       </div>
       <TestimonialsCarousel />
     </section>
-     );
+  );
 };
 
 export default Portfolio;

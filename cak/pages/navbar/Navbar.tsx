@@ -14,10 +14,10 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
 
   return (
     <>
-        <div className="w-full z-10 h-15 sticky top-0 bg-black">
+      <div className='w-full h-15 sticky z-10 top-0 bg-black'>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
-            <Logo/>
+            <Logo />
             <button
               type="button"
               className="inline-flex items-center md:hidden"
