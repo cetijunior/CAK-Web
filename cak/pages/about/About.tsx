@@ -1,5 +1,5 @@
 import React from "react";
-import SpotlightImages from '../components/spotlightImages'; // Ensure the import path is correct
+import SpotlightImages from '../../components/spotlightImages'; // Ensure the import path is correct
 
 // Updated images array with online image URLs
 export const images = [

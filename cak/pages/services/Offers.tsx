@@ -2,7 +2,7 @@ import React from 'react'
 import CallMadeRoundedIcon from '@mui/icons-material/CallMadeRounded';
 import Link from 'next/link';
 import { NextPage } from 'next';
-import Navbar from './navbar/Navbar';
+import Navbar from '../navbar/Navbar';
 
 const Offers = () => {
   return (
