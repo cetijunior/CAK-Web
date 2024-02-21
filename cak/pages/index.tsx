@@ -37,7 +37,7 @@ export default function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, [isNavOpen]); 
   return (
-    <main>
+    <main className="">
       <Navbar toggle={toggleNav} isNavOpen={isNavOpen} />
       {isNavOpen && (
         <ul className="flex flex-col md:flex-row justify-between items-center bg-emerald-800 text-white p-4">

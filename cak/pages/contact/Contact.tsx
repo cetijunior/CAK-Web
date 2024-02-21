@@ -20,7 +20,7 @@ function Contact({ }: Props) {
 
   return (
     <section id='contacts'>
-      <div className='bg-emerald-900 h-screen flex flex-col text-left md:flex-row max-w-full justify-center mx-auto items-center z-0'>
+      <div className='bg-emerald-900 h-screen flex flex-col text-left md:flex-row justify-center mx-auto items-center z-0'>
         <div className='flex flex-col space-y-10 mt-[100px]'>
           <h4 className='text-4xl font-semibold text-center text-white'>
             Want to hear more about us? <span className='underline decoration-emerald-300'>Lets Talk!</span>
@@ -40,8 +40,8 @@ function Contact({ }: Props) {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
-            <div className='flex space-x-2'>
+          <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-100 mx-auto'>
+            <div className='flex space-x-2 '>
               <input {...register('name')} placeholder='Name' className='contactInput text-black' type='text' />
               <input {...register('email')} placeholder='Email' className='contactInput text-black' type='email' />
             </div>
