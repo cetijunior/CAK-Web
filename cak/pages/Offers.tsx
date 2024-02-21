@@ -9,7 +9,7 @@ const Offers = () => {
     
     <div className='h-screen bg-emerald-100'>
       <Navbar></Navbar>
-      <div className='md:ml-40 md:flex md:gap-8'>
+      <div className='md:ml-40 mdnpm :flex md:gap-8'>
         <h1 className=' md:mt-10 md:text-lg text-black md:p-2 md:rounded-full bg-blue-400 hover:bg-blue-200 '>Our Services</h1> 
         <h3 className='md:mt-10 md:text-lg text-black md:p-2 md:rounded-full '>Take a look at what we have to offer.</h3>
       </div>
