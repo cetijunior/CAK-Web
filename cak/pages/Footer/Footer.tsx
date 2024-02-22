@@ -1,4 +1,12 @@
 const Footer: React.FC = () => {
+
+    const scrollToSection = (sectionId) => (e) => {
+        e.preventDefault();
+        const section = document.querySelector(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
     return (
         <footer className="bg-emerald-900 text-white">
             <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col space-y-8 md:space-y-0 md:flex-row md:justify-between">
@@ -6,13 +14,13 @@ const Footer: React.FC = () => {
                     <h5 className="text-xl font-bold mb-2">Our Company</h5>
                     <ul className="space-y-2">
                         <li>
-                            <a href="/about" className="hover:text-emerald-300 transition-colors">About Us</a>
+                            <a href="#about" onClick={scrollToSection('#about')} className="hover:text-emerald-300 transition-colors">About Us</a>
                         </li>
                         <li>
-                            <a href="/services" className="hover:text-emerald-300 transition-colors">Our Services</a>
+                            <a href="#services" onClick={scrollToSection('#services')} className="hover:text-emerald-300 transition-colors">Our Services</a>
                         </li>
                         <li>
-                            <a href="/contact" className="hover:text-emerald-300 transition-colors">Contact</a>
+                            <a href="#contacts" onClick={scrollToSection('#contacts')} className="hover:text-emerald-300 transition-colors">Contact</a>
                         </li>
                     </ul>
                 </div>
