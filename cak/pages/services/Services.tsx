@@ -7,7 +7,7 @@ const Services: NextPage = () => {
   const [isOffers, setIsOffers] = React.useState(false);
 
   return (
-    <section id='services' className='h-auto bg-emerald-900 flex justify-center items-center p-5'>
+    <section id='services' className='h-full bg-emerald-900 flex justify-center items-center p-5'>
       <div className='flex flex-col gap-10'>
         <div className='flex flex-col md:flex-row bg-transparent items-center justify-between gap-4 p-5' >
             <div className='flex flex-col p-10 gap-4 md:hover:drop-shadow-3xl md:hover:bg-emerald-700 md:hover:rounded-xl bg-emerald-700 rounded-xl drop-shadow-xl md:bg-emerald-900 md:drop-shadow-none'>

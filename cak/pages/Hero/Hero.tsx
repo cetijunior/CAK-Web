@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section id='hero' className="bg-emerald-900 mx-auto px-8 md:flex md:items-center md:justify-between py-12 min-h-[600px] w-auto">
+    <section id='hero' className="bg-emerald-900 mx-auto px-8 md:flex md:items-center md:justify-between py-12 min-h-[650px] w-auto">
       <div className="md:w-1/2">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to Our Website!</h1>
         <p className="text-lg md:text-xl mb-8">

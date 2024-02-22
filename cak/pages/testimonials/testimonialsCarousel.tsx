@@ -29,8 +29,8 @@ const TestimonialsCarousel: React.FC = () => {
       ))}
     </div>
     <div className='flex justify-center items-center'>
-    <button onClick={scrollLeft} className='bg-white text-black px-5 py-1 mx-2 rounded-md '>←</button>
-    <button onClick={scrollRight} className="bg-white text-black px-5 py-1 rounded-md">→</button>
+    <button onClick={scrollLeft} className='bg-white text-black px-5 py-1 mx-2 my-3 rounded-md '>←</button>
+    <button onClick={scrollRight} className="bg-white text-black px-5 py-1 mx-2 my-3 rounded-md">→</button>
     </div>
     </>
   );
