@@ -29,10 +29,10 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
 
   return (
     <>
-        <div className={`w-full h-15 sticky top-0 ${scrolled ? 'bg-black' : 'bg-black-800 shadow-glow'} transition duration-300`}>
+      <div className='w-full h-15 z-10 bg-black sticky top-0 '>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
-            <Logo/>
+            <Logo />
             <button
               type="button"
               className="inline-flex items-center md:hidden"
