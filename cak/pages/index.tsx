@@ -17,6 +17,7 @@ export default function Home() {
     const section = document.querySelector(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setIsNavOpen(false);
     }
   };
 
@@ -37,10 +38,10 @@ export default function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, [isNavOpen]); 
   return (
-    <main className="">
+    <main>
       <Navbar toggle={toggleNav} isNavOpen={isNavOpen} />
       {isNavOpen && (
-        <ul className="flex flex-col md:flex-row justify-between items-center bg-emerald-800 text-white p-4">
+       <ul className="fixed top-35 right-0 w-50 h-50 flex flex-col space-y-4 rounded-xl md:flex-row items-center bg-emerald-800 text-white p-9 z-10">
          <li><a href="#services" onClick={scrollToSection('#services')}><p>Services</p></a></li>
                 <li><a href="#portfolio" onClick={scrollToSection('#portfolio')}><p>Portfolio</p></a></li>
                 <li><a href="#about" onClick={scrollToSection('#about')}><p>About Us</p></a></li>
