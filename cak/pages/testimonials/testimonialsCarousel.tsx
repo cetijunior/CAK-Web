@@ -19,11 +19,11 @@ const TestimonialsCarousel: React.FC = () => {
 
   return (
     <>
-     <div className="flex overflow-x-auto scrollbar py-4 space-x-4" ref={carouselRef}>
+     <div className="flex overflow-x-auto scrollbar py-5 space-x-4" ref={carouselRef}>
       {testimonials.map((testimonial) => (
-        <div key={testimonial.id} className="min-w-max bg-emerald-500 p-4 rounded-lg shadow-md">
+        <div key={testimonial.id} className="min-w-max bg-emerald-500 p-8 rounded-lg shadow-md">
           <p className='text-white-800 text-lg'>{testimonial.username}</p>
-          <p className="text-gray-800 text-sm">{testimonial.comment}</p>
+          <p className="text-white-800 text-sm">{testimonial.comment}</p>
           <p className="text-yellow-400">{'★'.repeat(testimonial.rating)}</p>
         </div>
       ))}
