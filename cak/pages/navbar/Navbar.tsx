@@ -29,7 +29,7 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
 
   return (
     <>
-      <div className='w-full h-15 z-10 bg-black sticky top-0 '>
+      <div className='w-full h-15 z-10 bg-slate-800 sticky top-0 '>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
