@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from './CAK Web.png'
+import Image from 'next/image';
 
 const Logo = () => {
 
@@ -11,13 +13,13 @@ const Logo = () => {
   };
   return (
     <>
-    <div>
-      <a onClick={scrollToTop}>
-      <img className='cursor-pointer' src="https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-580x435.png" alt="logo" 
-      width={90}
-      height={90}/>
-      </a>
-    </div>
+      <div>
+        <a onClick={scrollToTop}>
+          <Image className='cursor-pointer' src={logo} alt="logo"
+            width={90}
+            height={90} />
+        </a>
+      </div>
     </>
   )
 }
