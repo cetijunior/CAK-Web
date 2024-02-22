@@ -20,9 +20,10 @@ function Contact({ }: Props) {
 
   return (
     <section id='contacts'>
-      <div className='bg-emerald-900 h-screen flex flex-col text-left md:flex-row justify-center mx-auto items-center z-0'>
-        <div className='flex flex-col space-y-10 mt-[100px]'>
-          <h4 className='text-4xl font-semibold text-center text-white'>
+      <div className='bg-emerald-900 h-screen flex flex-col text-left md:flex-row max-w-full justify-center mx-auto items-center z-0'>
+        <div className='flex flex-col space-y-16 mt-[100px]'>
+          <h1 className='text-6xl font-bold text-center text-white'>Contact Us:</h1>
+          <h4 className='text-3xl font-semibold text-center text-white'>
             Want to hear more about us? <span className='underline decoration-emerald-300'>Lets Talk!</span>
           </h4>
           <div className='flex flex-col space-x-8 sm:flex-row'>
