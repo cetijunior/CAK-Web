@@ -36,3 +36,18 @@ body {
   @apply w-full outline-none bg-white rounded-sm border-b px-6 py-4 border-emerald-300 text-emerald-900 placeholder-emerald-900 
   transition-all focus:border-emerald-300 focus:ring focus:ring-emerald-300 focus:ring-opacity-50 hover:border-emerald-500;
 }
+
+
+&::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: #006633;
+  border-radius: 10px;
+}
+
+&::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}

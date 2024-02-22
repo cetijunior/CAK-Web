@@ -3,7 +3,7 @@ import { testimonials, Testimonial } from './testimonials'; // Adjust the import
 
 const TestimonialsCarousel: React.FC = () => {
   return (
-    <div className="flex overflow-x-auto py-4 space-x-4">
+    <div className="flex overflow-x-auto scrollbar py-4 space-x-4"> {/*the scrollbar is hidden, an arrow would be better*/}
       {testimonials.map((testimonial) => (
         <div key={testimonial.id} className="min-w-max bg-emerald-500 p-4 rounded-lg shadow-md">
           <p className='text-white-800 text-lg'>{testimonial.username}</p>
