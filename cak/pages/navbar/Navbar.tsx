@@ -1,8 +1,23 @@
 'use client'
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
 import Logo from "./Logo";
 
 const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean }) => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Set `scrolled` to true if page is scrolled more than 50 pixels, otherwise false
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const scrollToSection = (sectionId) => (e) => {
     e.preventDefault();
@@ -14,10 +29,10 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
 
   return (
     <>
-      <div className='w-full h-15 sticky z-10 top-0 bg-black'>
+        <div className={`w-full h-15 sticky top-0 ${scrolled ? 'bg-black' : 'bg-black-800 shadow-glow'} transition duration-300`}>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
-            <Logo />
+            <Logo/>
             <button
               type="button"
               className="inline-flex items-center md:hidden"
