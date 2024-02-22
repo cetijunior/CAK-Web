@@ -1,45 +1,42 @@
 import React from 'react'
-import CallMadeRoundedIcon from '@mui/icons-material/CallMadeRounded';
-import Link from 'next/link';
-import { NextPage } from 'next';
-import Navbar from '../navbar/Navbar';
+import CloseIcon from '@mui/icons-material/Close';
+import { Card, CardHeader, CardBody, Image } from '@nextui-org/react';
 
-const Offers = () => {
-  return (
-    <div className='h-screen bg-emerald-100'>
-      <div className='md:ml-40 mdnpm :flex md:gap-8'>
-        <h1 className=' md:mt-10 md:text-lg text-black md:p-2 md:rounded-full bg-blue-400 hover:bg-blue-200 '>Our Services</h1>
-        <h3 className='md:mt-10 md:text-lg text-black md:p-2 md:rounded-full '>Take a look at what we have to offer.</h3>
-      </div>
-      <div className='md:mt-10 md:ml-40 md:mr-40 md:grid-cols-2 md:grid-rows-2 md:grid-flow-row md:grid gap-20 '>
-        <div className='md:w-120 md:h-40 bg-blue-200 hover:md:drop-shadow-2xl md:drop-shadow-xl rounded-xl   '>
-          <h2 className='md:text-3xl text-center'>Website Development</h2>
-          {/* This is the Arrow Icon */}
-          <Link href="/Offers">
-            <CallMadeRoundedIcon className="md:visible md:mt-20 md:ml-2 bg-black md:w-8 md:h-8 md:rounded-full md:hover:cursor-pointer" />
-          </Link>
-        </div>
-        <div className='md:w-120 md:h-40 bg-blue-200 hover:md:drop-shadow-2xl md:drop-shadow-xl drop-shado rounded-xl'>
-          <h2>Website Development</h2>
-          <p>Our team of developers will create a professional website for your business with the latest technology</p>
-          <Link href="/Offers">
-            <CallMadeRoundedIcon className="md:visible md:mt-12 md:ml-2 bg-black md:w-8 md:h-8 md:rounded-full md:hover:cursor-pointer" />
-          </Link>
-        </div>
-        <div className='md:w-120 md:h-40 bg-blue-200 hover:md:drop-shadow-2xl md:drop-shadow-xl drop-shado rounded-xl'>
-          <h2>Website Development</h2>
-          <p>Our team of developers will create a professional website for your business with the latest technology</p>
-          <Link href="/Offers">
-            <CallMadeRoundedIcon className="md:visible md:mt-12 md:ml-2 bg-black md:w-8 md:h-8 md:rounded-full md:hover:cursor-pointer" />
-          </Link>
-        </div>
-        <div className='md:w-120 md:h-40 bg-blue-200 hover:md:drop-shadow-2xl md:drop-shadow-xl drop-shado rounded-xl'>
-          <h2>Website Development</h2>
-          <p>Our team of developers will create a professional website for your business with the latest technology</p>
-          <Link href="/Offers">
-            <CallMadeRoundedIcon className="md:visible md:mt-12 md:ml-2 bg-black md:w-8 md:h-8 md:rounded-full md:hover:cursor-pointer" />
-          </Link>
-        </div>
+const Offers = ({children, isOpen, onClose}) => {
+  if (!isOpen) return null;
+  return ( 
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 1000,
+    }}>
+      <div style={{
+        backgroundColor: '#064e3b',
+        width: '1200px',
+        height: '550px',
+        borderRadius: '8px',
+        maxWidth: '100%',
+        zIndex: 1001,
+      }}>
+        {children}
+        <button className="text-white p-2 ml-2 mt-2 bg-black rounded-full" onClick={onClose}><CloseIcon/></button>
+        <Card className='ml-2 mr-2 mt-2 md:mx-10 rounded-xl md:hover:drop-shadow-2xl overflow-hidden bg-emerald-300'>
+          <CardHeader className='pt-2 px-4 flex-col items-start'>
+            <p className='ml-2 mt-2 text-3xl font-extrabold text-black'>Our Offer</p>
+            <h4 className='ml-2 text-xl text-black font-bold mt-4'>The 4-in-1 Bundle</h4>
+          </CardHeader>
+            <CardBody className='flex flex-col md:flex-row justify-between items-center md:w-full overflow-y-auto max-h-490'>
+              <p className='text-base text-black max-w-xl mb-4 md:mb-0'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus id blanditiis quis voluptas quasi molestias assumenda aperiam perferendis veniam? Officia, saepe sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maiores qui quae ea, temporibus laboriosam, ex mollitia accusantium aspernatur quibusdam aliquam quaerat odit minima illo vel voluptatum facere ipsum aut.Cupiditate ea illum deserunt culpa ducimus aspernatur neque.Quos reprehenderit, voluptate facere dolores praesentium esse dicta quas, saepe eveniet aspernatur, corrupti nesciunt quisquam velit possimus cumque mollitia consequuntur tenetur facilis!</p>
+              <Image src='https://www.appsdevpro.com/blog/wp-content/uploads/2022/09/Top-Web-Design-Development-Trends-You-Need-to-Know-in-2023.png' width={500} height={300} className='rounded-xl max-w-full h-auto'></Image>
+          </CardBody>
+        </Card>
       </div>
     </div>
   )
