@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Hero1 from './hero2.png'
 
 const Hero = () => {
 
@@ -24,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="md:w-1/2 flex justify-center md:justify-end">
-        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" alt="Image" className="rounded-full max-w-s md:max-w-md lg:max-w-lg xl:max-w-xl" />
+       <Image src={Hero1} alt="Hero" className=" mix-blend-darken rounded-full max-w-s md:max-w-md lg:max-w-xl xl:max-w-xl" />
       </div>
     </section>
   );

@@ -7,8 +7,8 @@ const Portfolio: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section id='portfolio'>
-      <div className="container mx-auto px-4 py-8">
+    <section id='portfolio' className='bg-emerald-900'>
+      <div className="container mx-auto px-4 py-20">
         <h1 className='text-5xl p-5'>Portfolio</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {projects.map((project: Project) => (
