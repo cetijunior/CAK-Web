@@ -1,23 +1,8 @@
 'use client'
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+
 import Logo from "./Logo";
 
 const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean }) => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Set `scrolled` to true if page is scrolled more than 50 pixels, otherwise false
-      setScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const scrollToSection = (sectionId) => (e) => {
     e.preventDefault();
