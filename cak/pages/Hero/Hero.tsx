@@ -1,32 +1,69 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Hero1 from './hero2.png'
+import Hero1 from '../../public/background1.png'; // Default large screen image
+import HeroMobile from '../../public/background 2.png'; // Smaller screen image
+import ButtonSvg from '../../public/button.svg'; // Ensure this is the correct path
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect screen size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Example breakpoint at 768px
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial check
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const scrollToSection = (sectionId) => (e) => {
     e.preventDefault();
     const section = document.querySelector(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id='hero' className="bg-emerald-900 mx-auto px-8 md:flex md:items-center md:justify-between py-12 min-h-[650px] w-auto">
-      <div className="md:w-1/2">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to Our Website!</h1>
-        <p className="text-lg md:text-xl mb-8">
-          Discover our range of services and how we can help you take your project to the next level.
+    <section
+      id="hero"
+      className="bg-[#f8edeb] flex flex-col md:flex-row items-center justify-center min-h-screen mx-auto"
+    >
+      <div className="text-center md:text-left p-4 md:p-20 z-10">
+        <h1 className="text-3xl md:text-5xl font-bold text-[#932b2d] mb-4">
+          Welcome to Our Website!
+        </h1>
+        <p className="text-lg text-[#381d1d] md:text-xl mb-8">
+          Discover our range of services and how we can help you take your
+          project to the next level.
         </p>
-        <div className="flex p-9 justify-center md:justify-start">
-          <a href="#contacts" onClick={scrollToSection('#contacts')}>
-            <p className="inline-block bg-emerald-800 text-white py-3 px-6 rounded-lg hover:bg-emerald-700 transition-colors">Contact Us</p>
-          </a>
+        <div className="flex justify-center md:justify-start">
+          <div
+            onClick={scrollToSection("#contacts")}
+            className="inline-flex items-center justify-center ml-6 cursor-pointer bg-no-repeat bg-center bg-cover hover:rotate-[30deg] transition-transform duration-300 ease-in-out"
+            style={{
+              backgroundImage: `url(${ButtonSvg.src})`,
+              width: "200px",
+              height: "100px",
+            }}
+          >
+            <a href="#contacts" className="text-transparent w-full h-full flex items-center justify-center">
+              Contact Us {/* Invisible text for accessibility, now clickable */}
+            </a>
+          </div>
         </div>
       </div>
-      <div className="md:w-1/2 flex justify-center md:justify-end">
-       <Image src={Hero1} alt="Hero" className=" mix-blend-darken rounded-full max-w-s md:max-w-md lg:max-w-xl xl:max-w-xl" />
+      <div className={`relative ${isMobile ? 'w-[400px] mt-[-850px] h-[200px]' : `flex items-center ml-[-450px] justify-center relative h-full w-full`}`}>
+        <Image
+          src={isMobile ? HeroMobile : Hero1}
+          alt="Hero Background"
+          objectFit="cover"
+          objectPosition="center"
+          priority={true}
+        />
       </div>
     </section>
   );

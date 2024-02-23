@@ -45,7 +45,7 @@ const AboutCard = ({ isOpen, onClose, selectedImage }) => {
       ...dynamicStyles, // Apply dynamic styles here
     }}>
       <div style={{
-        backgroundColor: '#064e3b',
+        backgroundColor: '#5d1f20',
         padding: '20px',
         borderRadius: '8px',
         display: 'flex',
@@ -57,11 +57,11 @@ const AboutCard = ({ isOpen, onClose, selectedImage }) => {
         <button style={{ marginLeft: 'auto', background: 'transparent', border: 'none', color: 'white', cursor: 'pointer' }} onClick={onClose}>
           <CloseIcon />
         </button>
-        <div className="flex flex-col md:flex-row bg-emerald-200 rounded-xl overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center bg-[#5d1f20] rounded-xl overflow-hidden">
           <Image src={selectedImage.src} alt={selectedImage.alt} className='md:w-[400px] h-auto rounded-l-xl' />
-          <div className="flex flex-col justify-center p-4 text-black md:w-1/2">
+          <div className="flex flex-col justify-center p-4 text-white md:w-1/2">
             <h3 className='text-2xl font-bold mb-2'>{selectedImage.name}</h3>
-            <p className='text-lg'>{selectedImage.description}</p>
+            <p className='text-lg'>{selectedImage.descriptionLong}</p>
             {/* Additional information */}
           </div>
         </div>
