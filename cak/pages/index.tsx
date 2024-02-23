@@ -42,7 +42,7 @@ const Home = () => {
     <main>
       <Navbar toggle={toggleNav} isNavOpen={isNavOpen} />
       {isNavOpen && (
-       <ul className="fixed top-35 right-0 w-50 h-50 flex flex-col space-y-4 rounded-xl md:flex-row items-center bg-emerald-800 text-white p-9 z-10">
+       <ul className="fixed shadow-xl top-20 right-0 z-20 w-50 h-50 flex flex-col space-y-5 rounded-xl md:flex-row items-center bg-[#8b2738] text-white p-9">
          <li><a href="#services" onClick={scrollToSection('#services')}><p>Services</p></a></li>
                 <li><a href="#portfolio" onClick={scrollToSection('#portfolio')}><p>Portfolio</p></a></li>
                 <li><a href="#about" onClick={scrollToSection('#about')}><p>About Us</p></a></li>

@@ -9,7 +9,7 @@ const Portfolio: React.FC = () => {
   return (
     <section id='portfolio' className='bg-[#f8edeb]'>
       <div className="container mx-auto px-4 py-20">
-        <h1 className='text-5xl p-5 text-[#5d1f20]'>Portfolio</h1>
+        <h1 className='text-4xl md:text-5xl font-bold text-[#932b2d] text-center mb-8 py-7'>Portfolio</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {projects.map((project: Project) => (
             <div key={project.id} className="bg-[#8f293a] rounded-lg shadow-lg overflow-hidden cursor-pointer" onClick={() => setSelectedProject(project)}>
