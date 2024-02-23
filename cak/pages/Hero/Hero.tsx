@@ -33,12 +33,11 @@ const Hero = () => {
       className="bg-[#f8edeb] flex flex-col md:flex-row items-center justify-center min-h-screen mx-auto"
     >
       <div className="text-center md:text-left p-4 md:p-20 z-10">
-        <h1 className="text-3xl md:text-5xl font-bold text-[#932b2d] mb-4">
-          Welcome to Our Website!
+        <h1 className="text-3xl md:text-6xl font-fuel font-bold text-[#932b2d] mb-4">
+          HERZLICHEN WILKOMMEN!
         </h1>
-        <p className="text-lg text-[#381d1d] md:text-xl mb-8">
-          Discover our range of services and how we can help you take your
-          project to the next level.
+        <p className="text-lg text-[#381d1d] font-typewriter md:text-xl mb-8">
+        Entdecken Sie unser Dienstleistungsangebot <br />und erfahren Sie,wie wir Ihnen helfen können, Ihr Projekt auf die nächste Stufe zu heben.
         </p>
         <div className="flex justify-center md:justify-start">
           <div
@@ -56,7 +55,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className={`relative ${isMobile ? 'w-[400px] mt-[-850px] h-[200px]' : `flex items-center ml-[-450px] justify-center relative h-full w-full`}`}>
+      <div className={`relative ${isMobile ? 'w-[400px] mt-[-850px] h-[200px]' : `flex items-center ml-[-600px] justify-center relative h-full w-full`}`}>
         <Image
           src={isMobile ? HeroMobile : Hero1}
           alt="Hero Background"

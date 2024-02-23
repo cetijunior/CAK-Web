@@ -18,7 +18,8 @@ const config: Config = {
       },
       fontFamily:{
         'fuel': ['pf-fuel-decay', 'sans-serif'],
-        'typewriter' : ['nitti-typewriter-normal', 'sans-serif']
+        'typewriter' : ['nitti-typewriter-normal', 'sans-serif'],
+        'grimes' : ['pf-fuel-grime', 'sans-serif'],
       }
     },
   },
