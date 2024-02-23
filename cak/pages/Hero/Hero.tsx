@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="bg-[#f8edeb] flex flex-col md:flex-row items-center justify-center min-h-screen mx-auto"
+      className="bg-[#f8edeb] flex flex-col shadow-glow md:flex-row items-center justify-center min-h-screen mx-auto"
     >
       <div className="text-center md:text-left p-4 md:p-20 z-10">
         <h1 className="text-3xl md:text-6xl font-fuel font-bold text-[#932b2d] mb-4">
@@ -42,7 +42,7 @@ const Hero = () => {
         <div className="flex justify-center md:justify-start">
           <div
             onClick={scrollToSection("#contacts")}
-            className="inline-flex items-center justify-center ml-6 cursor-pointer bg-no-repeat bg-center bg-cover hover:rotate-[30deg] transition-transform duration-300 ease-in-out"
+            className="inline-flex items-center animate-pulse justify-center ml-6 cursor-pointer bg-no-repeat bg-center bg-cover hover:rotate-[30deg] transition-transform duration-300 ease-in-out"
             style={{
               backgroundImage: `url(${ButtonSvg.src})`,
               width: "200px",
