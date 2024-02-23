@@ -14,9 +14,9 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
 
   return (
     <>
-      <div className=' w-full h-15 mb-[-40px] shadow-2xl z-20 bg-[#8f293a] sticky top-0 '>
+      <div className=' w-full h-15 mb-[-40px] z-20 bg-[#8f293a] sticky top-0 '>
         <div className="container mx-auto px-4 h-full">
-          <div className="flex justify-between items-center h-full">
+          <div className="flex justify-between items-center h-full ">
             <Logo />
             <button
               type="button"
@@ -35,10 +35,10 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
             </button>
             <div className="hidden md:flex gap-x-10 text-white">
               <ul className="flex gap-8">
-                <li><a href="#services" onClick={scrollToSection('#services')}><p>Services</p></a></li>
-                <li><a href="#portfolio" onClick={scrollToSection('#portfolio')}><p>Portfolio</p></a></li>
-                <li><a href="#about" onClick={scrollToSection('#about')}><p>About Us</p></a></li>
-                <li><a href="#contacts" onClick={scrollToSection('#contacts')}><p>Contacts</p></a></li>
+                <li><a href="#services" className="font-typewriter font-extrabold hover:drop-shadow-2xl" onClick={scrollToSection('#services')}><p>Services</p></a></li>
+                <li><a href="#portfolio" onClick={scrollToSection('#portfolio')} className="font-typewriter font-extrabold hover:drop-shadow-2xl"><p>Portfolio</p></a></li>
+                <li><a href="#about" onClick={scrollToSection('#about')} className="font-typewriter font-extrabold hover:drop-shadow-2xl"><p>About Us</p></a></li>
+                <li><a href="#contacts" onClick={scrollToSection('#contacts')} className="font-typewriter font-extrabold hover:drop-shadow-2xl"><p>Contacts</p></a></li>
               </ul>
             </div>
           </div>

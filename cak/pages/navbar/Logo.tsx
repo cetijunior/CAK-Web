@@ -14,10 +14,8 @@ const Logo = () => {
   return (
     <>
       <div>
-        <a onClick={scrollToTop}>
-          <Image className='cursor-pointer' src={logo} alt="logo"
-            width={90}
-            height={90} />
+        <a className="font-fuel text-3xl cursor-pointer hover:drop-shadow-2xl" onClick={scrollToTop}>
+          CAK Web Soltuions
         </a>
       </div>
     </>

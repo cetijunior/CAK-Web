@@ -44,7 +44,7 @@ body {
 }
 
 &::-webkit-scrollbar-thumb {
-  background-color: #006633;
+  background-color: #8f293a;
   border-radius: 10px;
 }
 
@@ -65,6 +65,12 @@ body {
     font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
   }
 
+  @font-face {
+    font-family:"pf-fuel-grime";
+    src:url("https://use.typekit.net/af/d2f06e/0000000000000000774f2adb/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/d2f06e/0000000000000000774f2adb/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/d2f06e/0000000000000000774f2adb/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+    }
+
 .hero-font {
   font-family: "pf-fuel-decay", sans-serif;
   font-weight: normal;
@@ -80,3 +86,12 @@ body {
   font-stretch: normal;
   font-display: auto; 
 }
+
+.fuel-grime{
+  font-family: "pf-fuel-grime", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto; 
+}
+

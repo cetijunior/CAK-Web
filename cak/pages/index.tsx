@@ -43,10 +43,10 @@ const Home = () => {
       <Navbar toggle={toggleNav} isNavOpen={isNavOpen} />
       {isNavOpen && (
        <ul className="fixed shadow-xl top-20 right-0 z-20 w-50 h-50 flex flex-col space-y-5 rounded-xl md:flex-row items-center bg-[#8b2738] text-white p-9">
-         <li><a href="#services" onClick={scrollToSection('#services')}><p>Services</p></a></li>
-                <li><a href="#portfolio" onClick={scrollToSection('#portfolio')}><p>Portfolio</p></a></li>
-                <li><a href="#about" onClick={scrollToSection('#about')}><p>About Us</p></a></li>
-                <li><a href="#contacts" onClick={scrollToSection('#contacts')}><p>Contacts</p></a></li>
+         <li><a href="#services" onClick={scrollToSection('#services')} className="font-typewriter font-extrabold drop-shadow-2xl"><p>Services</p></a></li>
+                <li><a href="#portfolio" onClick={scrollToSection('#portfolio')} className="font-typewriter font-extrabold drop-shadow-2xl"><p>Portfolio</p></a></li>
+                <li><a href="#about" onClick={scrollToSection('#about')} className="font-typewriter font-extrabold drop-shadow-2xl"><p>About Us</p></a></li>
+                <li><a href="#contacts" onClick={scrollToSection('#contacts')} className="font-typewriter font-extrabold drop-shadow-2xl"><p>Contacts</p></a></li>
         </ul>
       )}
       <Hero />

@@ -60,8 +60,8 @@ const AboutCard = ({ isOpen, onClose, selectedImage }) => {
         <div className="flex flex-col md:flex-row items-center bg-[#5d1f20] rounded-xl overflow-hidden">
           <Image src={selectedImage.src} alt={selectedImage.alt} className='md:w-[400px] h-auto rounded-l-xl' />
           <div className="flex flex-col justify-center p-4 text-white md:w-1/2">
-            <h3 className='text-2xl font-bold mb-2'>{selectedImage.name}</h3>
-            <p className='text-lg'>{selectedImage.descriptionLong}</p>
+            <h3 className='text-2xl mb-2 font-grimes'>{selectedImage.name}</h3>
+            <p className='text-lg font-typewriter'>{selectedImage.descriptionLong}</p>
             {/* Additional information */}
           </div>
         </div>

@@ -16,8 +16,8 @@ const SpotlightImages = ({ images, onImageClick }) => {
                     onClick={() => onImageClick(image)} // Pass the clicked image back to the parent
                 >
                     <img src={image.src} alt={image.alt} className="w-[900px] h-auto rounded-sm object-cover" />
-                    <p className="text-[#ae2012] font-bold text-xl text-center mt-2">{image.name}</p>
-                    <p className="text-center text-[#fca211dc] text-sm">{image.descriptionShort}</p>
+                    <p className="text-[#ae2012] font-bold text-xl text-center mt-2 font-grimes">{image.name}</p>
+                    <p className="text-center text-[#fca211dc] text-sm font-typewriter">{image.descriptionShort}</p>
                 </div>
             ))}
         </div>
