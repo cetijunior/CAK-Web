@@ -7,16 +7,16 @@ const Portfolio: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section id='portfolio' className='bg-emerald-900'>
+    <section id='portfolio' className='bg-[#f8edeb]'>
       <div className="container mx-auto px-4 py-20">
-        <h1 className='text-5xl p-5'>Portfolio</h1>
+        <h1 className='text-5xl p-5 text-[#5d1f20]'>Portfolio</h1>
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {projects.map((project: Project) => (
-            <div key={project.id} className="bg-emerald-800 rounded-lg shadow-lg overflow-hidden cursor-pointer" onClick={() => setSelectedProject(project)}>
+            <div key={project.id} className="bg-[#8f293a] rounded-lg shadow-lg overflow-hidden cursor-pointer" onClick={() => setSelectedProject(project)}>
               <img src={project.imageUrl} alt={project.title} className="w-full h-50 object-cover" />
               <div className="p-4">
-                <h3 className="text-lg font-bold">{project.title}</h3>
-                <p className="text-sm text-white-600">{project.description}</p>
+                <h3 className="text-lg font-bold py-3">{project.title}</h3>
+                <p className="text-sm text-[#e8e8e8]">{project.description}</p>
               </div>
             </div>
           ))}

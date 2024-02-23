@@ -6,10 +6,11 @@ import Hero from "./Hero/Hero";
 import Navbar from "./navbar/Navbar";
 import Portfolio from "./portfolio/Portfolio";
 import Services from "./services/Services";
-import Link from "next/link";
+import { appWithTranslation } from 'next-i18next';
+import 'i18next';
 
 
-export default function Home() {
+const Home = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const scrollToSection = (sectionId) => (e) => {
@@ -56,3 +57,6 @@ export default function Home() {
     </main>
   );
 }
+
+
+export default appWithTranslation(Home);
