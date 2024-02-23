@@ -16,6 +16,10 @@ const config: Config = {
       boxShadow: {
         glow: '0 0 8px 2px rgba(255, 255, 255, 0.6)',
       },
+      fontFamily:{
+        'fuel': ['pf-fuel-decay', 'sans-serif'],
+        'typewriter' : ['nitti-typewriter-normal', 'sans-serif']
+      }
     },
   },
   plugins: [require('tailwind-scrollbar'),],
