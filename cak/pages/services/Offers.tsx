@@ -19,10 +19,13 @@ const Offers = ({children, isOpen, onClose}) => {
     }}>
       <div style={{
         backgroundColor: '#064e3b',
+        marginTop: '80px',
         width: '1200px',
         height: '550px',
         borderRadius: '8px',
         maxWidth: '100%',
+        overflow: 'auto',
+        scrollbarWidth: 'none',
         zIndex: 1001,
       }}>
         {children}
