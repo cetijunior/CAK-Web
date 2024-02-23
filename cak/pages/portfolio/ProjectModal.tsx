@@ -22,7 +22,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-70 z-10 flex justify-center items-center overflow-y-auto p-4 transition-opacity duration-500"
+    <div className="fixed inset-0 bg-black bg-opacity-70 z-10 flex justify-center items-center overflow-y-auto pt-20 transition-opacity duration-500"
          style={{ opacity: showModal ? 1 : 0 }}>
       <div className="bg-[#e8e8e8] rounded-lg p-4 max-w-md w-full mx-2 transition-all duration-500 transform"
            style={{ opacity: showModal ? 1 : 0, transform: showModal ? 'scale(1)' : 'scale(0.95)' }}>
