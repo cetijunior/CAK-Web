@@ -14,7 +14,7 @@ const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean 
 
   return (
     <>
-      <div className=' w-full h-15 mb-[-40px] z-20 bg-[#8f293a] sticky top-0 '>
+      <div className=' w-full h-[70px] mb-[-40px] z-20 bg-[#8f293a] drop-shadow-2xl sticky top-0 '>
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full ">
             <Logo />
