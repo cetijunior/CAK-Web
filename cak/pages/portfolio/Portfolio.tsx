@@ -13,7 +13,7 @@ const Portfolio: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4">
           {projects.map((project: Project) => (
             <div key={project.id} className="bg-[#8f293a] rounded-lg shadow-lg overflow-hidden cursor-pointer" onClick={() => setSelectedProject(project)}>
-              <img src={project.imageUrl} alt={project.title} className="w-full h-50 object-cover" />
+              <img src={project.imageUrl} alt={project.title} className="w-full h-[600px] object-cover" />
               <div className="p-4">
                 <h3 className="text-lg  font-grimes py-3">{project.title}</h3>
                 <p className="text-sm text-[#e8e8e8] font-typewriter">{project.description}</p>
