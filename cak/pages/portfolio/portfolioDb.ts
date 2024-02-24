@@ -3,32 +3,32 @@ export type Project = {
     title: string;
     description: string;
     imageUrl: string;
-  };
   
+}
   // Array of projects
   export const projects: Project[] = [
     {
       id: 1,
       title: 'Projekt Eins',
-      description: 'This is a brief description of Project One. It showcases our work on e-commerce platforms.',
-      imageUrl: 'https://i.pinimg.com/564x/7e/80/f0/7e80f09f54fa7ef0e9eb13a0be293635.jpg', // Replace with your actual image path
+      description: 'Das Design der Webseite ist schlicht und elegant, ideal für moderne Restaurants, die Wert auf eine gesunde und ansprechende Präsentation ihrer Speisen legen. Die übersichtliche Gestaltung und die dezente Farbwahl unterstreichen den minimalistischen Stil, der für eine Vielzahl von gastronomischen Konzepten geeignet ist.',
+      imageUrl: 'template1.jpg', // Replace with your actual image path
     },
     {
       id: 2,
       title: 'Projekt Zwei',
-      description: 'This is a brief description of Project Two. It showcases our work on blogs and personal sites.',
-      imageUrl: 'https://i.pinimg.com/564x/51/0f/ad/510fad7ac4829296ea029b69deea4319.jpg', // Replace with your actual image path
+      description: 'Das Design nutzt dunkle Töne für eine edle Ausstrahlung, ideal für ein gehobenes Restaurant. Klare Linien und hochwertige Bilder vermitteln Qualität und Stil, während die übersichtliche Struktur eine einfache Navigation ermöglicht.',
+      imageUrl: 'template2.jpg', // Replace with your actual image path
     },
     {
       id: 3,
       title: 'Projekt Drei',
-      description: 'This is a brief description of Project Three. It showcases our innovative solutions for startups.',
-      imageUrl: 'https://i.pinimg.com/736x/36/ee/9a/36ee9aa3055b1e1b2c9e03fe0beef0dd.jpg', // Replace with your actual image path
+      description: 'Das Webseitendesign ist hell und freundlich, mit einem klaren Fokus auf Bio-Produkte. Die saubere Aufteilung und das frische Farbschema unterstreichen das gesunde und natürliche Angebot. Es eignet sich perfekt für Bio-Märkte oder Restaurants mit Schwerpunkt auf biologischer Küche.',
+      imageUrl: 'template3.jpg', // Replace with your actual image path
     },
     {
       id: 4,
       title: 'Projekt Vier',
-      description: 'This is a brief description of Project Four. Highlighting our expertise in creating educational platforms.',
-      imageUrl: 'https://i.pinimg.com/564x/00/8e/d3/008ed3ecc4859739a5c209dc36aa61a1.jpg', // Replace with your actual image path
+      description: 'Das elegante Webseitendesign mit cremefarbenen und marineblauen Tönen, klarer Typografie und viel Weißraum schafft eine exklusive Atmosphäre, ideal für Fisch- und Meeresfrüchterestaurants, wobei strukturierte Seiten und ansprechende Fotos das Menü und Ambiente betonen.',
+      imageUrl: 'template4.jpg', // Replace with your actual image path
     },
   ];
