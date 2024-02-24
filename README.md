@@ -3,7 +3,7 @@
 This is a website build in Collaboration with @archieQa @keniDervishaj 
 
 [Home]
-![Screenshot 2024-02-24 171109](https://github.com/cetijunior/CAK-Web/assets/78642663/b735c3ac-3a0d-4329-860b-43090b6fadef)
+![Screenshot 2024-02-24 201027](https://github.com/cetijunior/CAK-Web/assets/78642663/dcacbada-6fa0-4c96-b886-a2e208adbbb2)
 
 
 [Services]
