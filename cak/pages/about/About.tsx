@@ -40,7 +40,7 @@ const About = () => {
             onClick={() => handleImageClick(image.id)}
             style={{
               display: 'flex',
-              transition: 'max-height 0.9s ease-in-out',
+              transition: 'max-height 0.9s ease-in ease-out',
               overflow: 'hidden',
               maxHeight: selectedImageId === image.id ? '700px' : '400px',
               flexDirection: selectedImageId === image.id || isMobile ? 'column' : 'row',
@@ -49,8 +49,8 @@ const About = () => {
               backgroundColor: '#8f293a',
             }}
           >
-            <Image src={image.src} alt={image.alt} width={400} height={200} className="rounded-sm object-cover" />
-            <div className={`pl-4 ${selectedImageId === image.id ? 'block' : 'hidden'} flex flex-col`}>
+            <Image src={image.src} alt={image.alt} width={400} height={200} className="rounded-xl object-cover" />
+            <div className={`pl-4 ${selectedImageId === image.id ? 'block' : 'hidden'} flex overflow-y-auto scrollbar-none flex-col`}>
               <p className="text-[#e8e8e8] font-bold font-grimes text-4xl text-center mt-2">{image.name}</p>
               <p className="text-center font-grimes text-[#f8edeb] text-lg">{image.descriptionShort}</p>
               {selectedImageId === image.id && (
