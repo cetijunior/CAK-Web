@@ -52,21 +52,48 @@ function Contact() {
 
           <form onSubmit={handleSubmit(onSubmit)} className='flex px-4 flex-col space-y-2 w-auto mx-auto'>
             <div className='flex space-x-2'>
-              <input {...register('name', { required: "Name is required" })} placeholder='Name' className={`contactInput text-black placeholder:font-typewriter focus:font-typewriter ${errors.name ? 'border-red-500' : ''}`} type='text' />
-              {errors.name && <p className="text-red-500 text-xs italic">{errors.name.message}</p>}
+              <input
+                {...register('name', { required: "*Name is required" })}
+                placeholder={errors.name ? errors.name.message : 'Name'}
+                className={`contactInput text-black ${errors.name ? 'border-red-500' : ''}`}
+                type='text'
+              />
 
-              <input {...register('email', { required: "Email is required", pattern: { value: /^\S+@\S+$/i, message: "Invalid email format" } })} placeholder='Email' className={`contactInput placeholder:font-typewriter focus:font-typewrite text-black ${errors.email ? 'border-red-500' : ''}`} type='email' />
+              <input
+                {...register('email', {
+                  required: "*Email is required", // Displayed if the field is empty
+                  pattern: {
+                    value: /^\S+@\S+$/i, // Regex for basic email validation
+                    message: "Invalid email format" // Displayed if the regex does not match
+                  }
+                })}
+                placeholder={errors.email ? (errors.email.message as string) : 'Email'}
+                className={`contactInput text-black ${errors.email ? 'border-red-500' : ''}`}
+                type='email'
+              />
               {errors.email && <p className="text-red-500 text-xs italic">{errors.email.message}</p>}
 
             </div>
 
-            <input {...register('subject', { required: "Subject is required" })} placeholder='Betreff' className={`contactInput placeholder:font-typewriter focus:font-typewrite text-black ${errors.subject ? 'border-red-500' : ''}`} type='text' />
-            {errors.subject && <p className="text-red-500 text-xs italic">{errors.subject.message}</p>}
+            <input
+              {...register('subject', { required: "*Subject is required" })}
+              placeholder={errors.subject ? errors.subject.message : 'Betreff'}
+              className={`contactInput text-black ${errors.subject ? 'border-red-500' : ''}`}
+              type='text'
+            />
 
-            <textarea {...register('message', { required: "Message is required" })} placeholder='Nachricht' className={`contactInput placeholder:font-typewriter focus:font-typewrite text-black ${errors.message ? 'border-red-500' : ''}`} />
-            {errors.message && <p className="text-red-500 text-xs italic">{errors.message.message}</p>}
 
-            <button type='submit' disabled={isSubmitting || Object.keys(errors).length > 0} className={`bg-[#d5bcb7] font-typewriter font-extrabold ${isSubmitting ? 'cursor-not-allowed opacity-50' : 'hover:bg-[#932b2d] hover:duration-500'} py-5 px-10 rounded-md text-black font-bold transition duration-300 ease-in-out`}>
+            <textarea
+              {...register('message', { required: "*Message is required" })}
+              placeholder={errors.message ? errors.message.message : 'Nachricht'}
+              className={`contactInput text-black ${errors.message ? 'text-red-500' : ''}`}
+            />
+
+            <button
+              type='submit'
+              disabled={isSubmitting || Object.keys(errors).length > 0}
+              className={`bg-[#d5bcb7] ${isSubmitting ? 'cursor-not-allowed opacity-50' : 'hover:bg-[#932b2d] hover:duration-500'} py-5 px-10 rounded-md text-black font-bold transition duration-300 ease-in-out`}
+            >
               {isSubmitting ? 'Submitting...' : 'Senden'}
             </button>
           </form>
