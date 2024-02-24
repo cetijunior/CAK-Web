@@ -28,8 +28,8 @@ const About = () => {
 
   return (
     <section id="about" className="bg-[#f8edeb] mx-auto px-8 py-20 min-h-[600px]">
-      <h1 className="text-4xl md:text-5xl font-bold text-[#932b2d] text-center mb-8 py-7">Über Uns</h1>
-      <p className="text-lg text-[#381d1d] md:text-xl text-center mb-12 font-bold">
+      <h1 className="text-4xl md:text-5xl font-bold font-grimes text-[#932b2d] text-center mb-8 py-7">Über Uns</h1>
+      <p className="text-lg text-[#381d1d] font-typewriter md:text-xl text-center mb-12 font-bold">
         Erfahren Sie mehr über unseren Weg, unser Team und was uns antreibt, außergewöhnliche Dienstleistungen zu erbringen.
       </p>
       <div className='flex flex-wrap justify-center gap-4 items-start'>
@@ -51,17 +51,17 @@ const About = () => {
           >
             <Image src={image.src} alt={image.alt} width={400} height={200} className="rounded-sm object-cover" />
             <div className={`pl-4 ${selectedImageId === image.id ? 'block' : 'hidden'} flex flex-col`}>
-              <p className="text-[#f8edeb] font-bold text-3xl text-center mt-2">{image.name}</p>
-              <p className="text-center font-semibold text-[#ff1111] text-lg">{image.descriptionShort}</p>
+              <p className="text-[#e8e8e8] font-bold font-grimes text-4xl text-center mt-2">{image.name}</p>
+              <p className="text-center font-grimes text-[#f8edeb] text-lg">{image.descriptionShort}</p>
               {selectedImageId === image.id && (
-                <p className="text-center text-break text-[#120909] text-lg mt-2">{image.descriptionLong}</p>
+                <p className="text-center text-break text-[#e8e8e8] font-typewriter text-lg mt-2">{image.descriptionLong}</p>
               )}
             </div>
           </div>
         ))}
       </div>
       <div className="text-center mt-12">
-        <p className="text-[#381d1d] text-lg font-bold">
+        <p className="text-[#381d1d] text-lg font-typewriter font-bold">
           Unser Team ist bestrebt, erstklassige, auf die Bedürfnisse unserer Kunden zugeschnittene Dienstleistungen zu erbringen. Erkunden Sie unsere Website und finden Sie heraus, wie wir Ihnen helfen können, Ihre Ziele zu erreichen.
         </p>
       </div>
