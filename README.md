@@ -1,6 +1,6 @@
 # CAK-Web
 
-This is a website build in Collaboration with @archieQa @keniDervishak  
+This is a website build in Collaboration with @archieQa @keniDervishaj 
 
 [Home]
 ![Screenshot 2024-02-24 171109](https://github.com/cetijunior/CAK-Web/assets/78642663/b735c3ac-3a0d-4329-860b-43090b6fadef)
