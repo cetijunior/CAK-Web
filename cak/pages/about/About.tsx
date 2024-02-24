@@ -36,24 +36,25 @@ const About = () => {
         {images.map((image) => (
           <div
             key={image.id}
-            className={`cursor-pointer transition-opacity duration-300 p-4 hover:bg-[#c89797] rounded-lg max-w-[600px]`}
+            className={`cursor-pointer transition-opacity duration-300 p-4 rounded-2xl max-w-[550px]`}
             onClick={() => handleImageClick(image.id)}
             style={{
               display: 'flex',
               transition: 'max-height 0.9s ease-in-out',
               overflow: 'hidden',
-              maxHeight: selectedImageId === image.id ? '800px' : '400px',
+              maxHeight: selectedImageId === image.id ? '700px' : '400px',
               flexDirection: selectedImageId === image.id || isMobile ? 'column' : 'row',
               alignItems: 'center',
               justifyContent: 'center',
+              backgroundColor: '#8f293a',
             }}
           >
             <Image src={image.src} alt={image.alt} width={400} height={200} className="rounded-sm object-cover" />
             <div className={`pl-4 ${selectedImageId === image.id ? 'block' : 'hidden'} flex flex-col`}>
-              <p className="text-[#ae2012] font-bold text-xl text-center mt-2">{image.name}</p>
-              <p className="text-center text-[#ff0000ad] text-lg">{image.descriptionShort}</p>
+              <p className="text-[#f8edeb] font-bold text-3xl text-center mt-2">{image.name}</p>
+              <p className="text-center font-semibold text-[#ff1111] text-lg">{image.descriptionShort}</p>
               {selectedImageId === image.id && (
-                <p className="text-center text-break text-[#381d1d] text-lg mt-2">{image.descriptionLong}</p>
+                <p className="text-center text-break text-[#120909] text-lg mt-2">{image.descriptionLong}</p>
               )}
             </div>
           </div>
