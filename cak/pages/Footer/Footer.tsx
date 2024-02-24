@@ -42,10 +42,10 @@ const Footer: React.FC = () => {
                     <h5 className="text-2xl font-bold mb-2 font-grimes">Legal</h5>
                     <ul className="space-y-2">
                         <li>
-                            <a href="/privacy" className="hover:text-[#df5c5c] transition-colors font-typewriter font-semibold">Datenschutzklärung</a>
+                            <a href="#hero" onClick={scrollToSection('#hero')} className="hover:text-[#df5c5c] transition-colors font-typewriter font-semibold">Datenschutzklärung</a>
                         </li>
                         <li>
-                            <a href="/terms" className="hover:text-[#df5c5c] transition-colors font-typewriter font-semibold">Benutzerbedinungen</a>
+                            <a href="#hero" onClick={scrollToSection('#hero')} className="hover:text-[#df5c5c] transition-colors font-typewriter font-semibold">Benutzerbedinungen</a>
                         </li>
                     </ul>
                 </div>

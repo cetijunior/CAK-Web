@@ -4,8 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <link rel="icon" href="/logo.PNG" />
       <title>The Web Chef</title>
-      <link rel="icon" href="/logo.PNG"/>
       <body>
         <Main />
         <NextScript />
