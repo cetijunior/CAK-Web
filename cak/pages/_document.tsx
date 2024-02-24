@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <title>The Web Chef</title>
+      <link rel="icon" href="/logo.PNG"/>
       <body>
         <Main />
         <NextScript />
