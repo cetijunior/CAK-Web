@@ -33,7 +33,7 @@ const Hero = () => {
       className="bg-[#f8edeb] flex flex-col shadow-glow md:flex-row items-center justify-center min-h-screen mx-auto"
     >
       <div className="text-center md:text-left pl-10 p-4 z-10">
-        <h1 className="text-2xl md:text-6xl font-fuel  font-bold text-[#932b2d] mb-4">
+        <h1 className="text-2xl md:text-6xl font-fuel font-bold text-[#932b2d]  mb-4">
           HERZLICHEN WILKOMMEN!
         </h1>
         <p className="text-lg text-[#381d1d] font-typewriter md:text-xl mb-8">
@@ -55,7 +55,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className={`relative ${isMobile ? 'w-[400px] mt-[-950px] h-[200px]' : `flex items-center ml-[-600px] justify-center relative h-full w-full`}`}>
+      <div className={`relative ${isMobile ? 'sm:w-[200px] w-5/6  h-[200px]' : `flex items-center ml-[-600px] justify-center relative h-full w-full`}`}>
         <Image
           src={isMobile ? HeroMobile : Hero1}
           alt="Hero Background"

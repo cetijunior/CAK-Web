@@ -36,13 +36,13 @@ const About = () => {
         {images.map((image) => (
           <div
             key={image.id}
-            className={`cursor-pointer transition-opacity duration-300 p-4 rounded-2xl max-w-[550px]`}
+            className={`cursor-pointer duration-1000 p-4 rounded-2xl max-w-[550px]`}
             onClick={() => handleImageClick(image.id)}
             style={{
               display: 'flex',
-              transition: 'max-height 0.9s ease-in ease-out',
+              transition: 'max-height 1s ease-in-out',
               overflow: 'hidden',
-              maxHeight: selectedImageId === image.id ? '700px' : '400px',
+              maxHeight: selectedImageId === image.id ? '800px' : '400px',
               flexDirection: selectedImageId === image.id || isMobile ? 'column' : 'row',
               alignItems: 'center',
               justifyContent: 'center',
