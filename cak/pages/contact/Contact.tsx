@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
 import { Phone, Map, Mail } from '@mui/icons-material';
 import { useForm, SubmitHandler } from 'react-hook-form';
@@ -35,12 +36,12 @@ function Contact() {
           <h4 className='sm:text-4xl text-2xl font-bold text-center text-[#932b2dab] font-typewriter'>
             Wollen Sie mehr über uns lernen? <span className='underline text-[#932b2d] decoration-[#932b2d]'>Let's Talk</span>
           </h4>
-          <div className='flex lg:flex-row flex-col sm:justify-center justify-start space-x-8'>
-            <div className='flex md:flex-row flex-row sm:items-center items-start space-x-5 justify-center'>
+          <div className='flex lg:flex-row flex-col sm:items-center items-start sm:justify-center justify-start pl-6 sm:space-x-8'>
+            <div className='flex md:flex-row flex-row space-x-3 sm:items-center items-start sm:justify-center justify-start'>
               <Phone className='text-[#5d1f20] h-7 w-7 animate-pulse' />
               <p className='sm:text-3xl text-md text-[#932b2dab] font-typewriter font-extrabold '>+4917623592066</p>
             </div>
-            <div className='flex md:flex-row flex-row sm:items-center items-start space-x-5 justify-center'>
+            <div className='flex md:flex-row flex-row space-x-3 sm:items-center items-start sm:justify-center justify-start'>
               <Mail className='text-[#5d1f20] h-7 w-7 animate-pulse' />
               <p className='sm:text-3xl text-md text-[#932b2dab] font-typewriter font-extrabold'>info@cakwebsolutions.com</p>
             </div>
