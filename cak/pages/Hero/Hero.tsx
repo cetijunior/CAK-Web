@@ -33,10 +33,10 @@ const Hero = () => {
       className="bg-[#f8edeb] flex flex-col shadow-glow md:flex-row items-center justify-center min-h-screen mx-auto"
     >
       <div className="text-center md:text-left pl-10 p-4 z-10">
-        <h1 className="text-6xl sm:text-8xl font-fuel font-bold text-[#932b2d] mb-4">
+        <h1 className="text-6xl md:text-5xl sm:text-8xl font-fuel font-bold text-[#932b2d] mb-4">
           HERZLICHEN WILKOMMEN!
         </h1>
-        <p className="text-lg text-[#381d1d] font-typewriter md:text-xl mb-8">
+        <p className="text-lg text-[#381d1d] font-typewriter md: mb-8">
           Entdecken Sie unser Dienstleistungsangebot <br />und erfahren Sie,wie wir Ihnen helfen können, Ihr Projekt auf die nächste Stufe zu heben.
         </p>
         <div className="flex justify-center md:justify-start">
