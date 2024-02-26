@@ -1,7 +1,7 @@
 /* eslint-disable react/no-children-prop */
 import React from 'react';
 import { NextPage } from 'next';
-import Offers from './Offers';
+import Offers from '../../components/Offers';
 import Image from 'next/image';
 
 

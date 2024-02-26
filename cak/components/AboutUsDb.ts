@@ -1,6 +1,6 @@
-import pfp1 from '../pages/about/cjPFP.jpg'
-import pfp2 from '../pages/about/keniPFP.jpg'
-import pfp3 from '../pages/about/archiePFP.jpg'
+import pfp1 from '../public/cjPFP.jpg'
+import pfp2 from '../public/keniPFP.jpg'
+import pfp3 from '../public/archiePFP.jpg'
 import { StaticImageData } from 'next/image';
 import React from 'react';
 

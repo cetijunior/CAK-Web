@@ -1,6 +1,6 @@
 'use client'
 
-import Logo from "./Logo";
+import Logo from "../../components/Logo";
 
 const Navbar = ({ toggle, isNavOpen }: { toggle: () => void, isNavOpen: boolean }) => {
 
