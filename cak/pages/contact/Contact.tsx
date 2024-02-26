@@ -30,19 +30,19 @@ function Contact() {
   return (
     <section id='contacts'>
       <div className='bg-[#f8edeb] h-screen flex flex-col pb-20 text-left md:flex-row max-w-full justify-center mx-auto items-center z-0'>
-        <div className='flex flex-col text-break w-auto space-y-16 mt-[100px]'>
+        <div className='flex flex-col text-break w-fit space-y-16 mt-[100px]'>
           <h1 className='text-6xl font-bold font-grimes text-center text-[#932b2d]'>Kontaktiere Uns</h1>
           <h4 className='sm:text-4xl text-2xl font-bold text-center text-[#932b2dab] font-typewriter'>
             Wollen Sie mehr über uns lernen? <span className='underline text-[#932b2d] decoration-[#932b2d]'>Let's Talk</span>
           </h4>
-          <div className='flex flex-col sm:justify-center justify-start space-x-8 sm:flex-row'>
-            <div className='flex sm:items-center items-start space-x-5 justify-center'>
+          <div className='flex lg:flex-row flex-col sm:justify-center justify-start space-x-8'>
+            <div className='flex md:flex-row flex-row sm:items-center items-start space-x-5 justify-center'>
               <Phone className='text-[#5d1f20] h-7 w-7 animate-pulse' />
-              <p className='sm:text-3xl text-xl text-[#932b2dab] font-typewriter font-extrabold '>+4917623592066</p>
+              <p className='sm:text-3xl text-md text-[#932b2dab] font-typewriter font-extrabold '>+4917623592066</p>
             </div>
-            <div className='flex items-center sm:w-auto w-[350px] space-x-5 justify-center'>
+            <div className='flex md:flex-row flex-row sm:items-center items-start space-x-5 justify-center'>
               <Mail className='text-[#5d1f20] h-7 w-7 animate-pulse' />
-              <p className='sm:text-3xl text-xl text-[#932b2dab] font-typewriter font-extrabold'>info@cakwebsolutions.com</p>
+              <p className='sm:text-3xl text-md text-[#932b2dab] font-typewriter font-extrabold'>info@cakwebsolutions.com</p>
             </div>
             {/* <div className='flex items-center space-x-5 justify-center'>
               <Map className='text-[#5d1f20] h-7 w-7 animate-pulse' />
@@ -50,7 +50,7 @@ function Contact() {
             </div> */}
           </div>
 
-          <form onSubmit={handleSubmit(onSubmit)} className='flex px-4 flex-col space-y-2 sm:w-auto w-[400px] mx-auto'>
+          <form onSubmit={handleSubmit(onSubmit)} className='flex px-4 flex-col space-y-2 sm:w-auto w-[300px] mx-auto'>
             <div className='flex space-x-2'>
               <input
                 {...register('name', { required: "*Der Name fehlt" })}
