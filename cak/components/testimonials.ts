@@ -1,3 +1,5 @@
+import React from "react";
+
 export type Testimonial = {
     id: number;
     username: string;

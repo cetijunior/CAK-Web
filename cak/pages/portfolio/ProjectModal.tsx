@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Project } from './portfolioDb'; // Adjust the import path as necessary
+import { Project } from '../../components/portfolioDb'; // Adjust the import path as necessary
 import Image from 'next/image';
 
 type ProjectModalProps = {

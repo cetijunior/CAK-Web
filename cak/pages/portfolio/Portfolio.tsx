@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { projects, Project } from './portfolioDb'; // Adjust the import path as necessary
+import { projects, Project } from '../../components/portfolioDb'; // Adjust the import path as necessary
 import TestimonialsCarousel from '../testimonials/testimonialsCarousel';
 import ProjectModal from './ProjectModal'; // Adjust the import path as necessary
 import Image from 'next/image';
