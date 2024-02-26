@@ -10,7 +10,7 @@ const Services: NextPage = () => {
   return (
     <section id='services' className='h-full bg-[#f8edeb] flex justify-center items-center pt-20'>
       <div className='flex flex-col gap-10'>
-        <div className='md:gap-3 flex flex-col md:flex-row bg-transparent items-center justify-between p-5' >
+        <div className='flex flex-col md:flex-row gap-8 p-5 items-center justify-between md:gap-3' >
           <div className='flex flex-col p-10 gap-4 bg-[#e8e8e8] max-w-[550px] md:hover:rounded-2xl rounded-xl drop-shadow-2xl'>
             <h1 className='text-[#5d1f20] font-bold font-grimes text-xl md:text-3xl'>Webseiteentwicklung und Design</h1>
             <p className='mt-6 text-[#381d1d] font-typewriter'>Unsere Angebote im Bereich der Webentwicklung und -gestaltung umfassen maßgeschneiderte Lösungen für moderne und ansprechende Websites.Wir bieten kreative  Designs, benutzerfreundliche Oberflächen und zuverlässige Entwicklungsdienstleistungen, um die Online-Präsenz Ihres Unternehmens optimal zu gestalten und zu verbessern.</p>
