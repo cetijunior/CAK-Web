@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Logo = () => {
 
-  const scrollToTop = (e) => {
+  const scrollToTop = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     window.scrollTo({
       top: 0,
