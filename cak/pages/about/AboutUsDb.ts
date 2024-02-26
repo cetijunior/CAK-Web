@@ -1,12 +1,13 @@
 import pfp1 from './cjPFP.jpg'
 import pfp2 from './keniPFP.jpg'
 import pfp3 from './archiePFP.jpg'
+import { StaticImageData } from 'next/image';
 
 
 
 export type Image = {
     id: number;
-    src: string;
+    src: StaticImageData;
     alt: string;
     name: string;
     descriptionShort: string;

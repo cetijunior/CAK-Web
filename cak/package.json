@@ -21,7 +21,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.50.1",
-    "react-i18next": "^14.0.5"
+    "react-i18next": "^14.0.5",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "@types/node": "^20",
