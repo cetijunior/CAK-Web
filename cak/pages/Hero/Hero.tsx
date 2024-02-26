@@ -37,12 +37,12 @@ const Hero = () => {
           HERZLICHEN WILKOMMEN!
         </h1>
         <p className="text-lg text-[#381d1d] font-typewriter md: mb-8">
-          Entdecken Sie unser Dienstleistungsangebot <br />und erfahren Sie,wie wir Ihnen helfen können, Ihr Projekt auf die nächste Stufe zu heben.
+          Entdecken Sie unser Dienstleistungsangebot <br />und erfahren Sie,wie wir Ihnen helfen können, <br /> Ihr Projekt auf die nächste Stufe zu heben.
         </p>
         <div className="flex justify-center md:justify-start">
           <div
             onClick={scrollToSection("#contacts")}
-            className="inline-flex items-center animate-pulse justify-center ml-6 cursor-pointer bg-no-repeat bg-center bg-cover hover:rotate-[30deg] transition-transform duration-300 ease-in-out"
+            className="inline-flex items-center animate-pulse justify-center ml-6 cursor-pointer bg-no-repeat bg-center bg-cover hover:rotate-[360deg] transition-transform duration-700 ease-in-out"
             style={{
               backgroundImage: `url(${ButtonSvg.src})`,
               width: "200px",
@@ -64,7 +64,7 @@ const Hero = () => {
           priority={true}
         />
       </div>
-    </section>
+    </section >
   );
 };
 
