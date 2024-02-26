@@ -16,6 +16,15 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .image-container {
+    @apply justify-center items-center;
+  }
+
+  .image-container img {
+    @apply max-w-[80%] h-auto;
+  }
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
