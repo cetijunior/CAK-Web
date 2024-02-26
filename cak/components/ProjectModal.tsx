@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Project } from '../../components/portfolioDb'; // Adjust the import path as necessary
+import { Project } from './portfolioDb'; // Adjust the import path as necessary
 import Image from 'next/image';
 
 type ProjectModalProps = {
@@ -11,9 +11,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    // Trigger the modal to open when the component mounts
+    console.log(project); // This should log the current project object
     setShowModal(true);
-  }, []);
+  }, [project]);
 
   // Enhanced close function that also handles animation
   const handleClose = () => {
@@ -29,7 +29,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
         style={{ opacity: showModal ? 1 : 0, transform: showModal ? 'scale(1)' : 'scale(0.95)' }}>
         <div className="overflow-y-auto scrollbar-none max-h-[80vh]">
           <h2 className="text-xl text-[#5d1f20] font-bold">{project.title}</h2>
-          <Image src={project.imageUrl} alt={project.title} width={200} height={200} className="my-4 w-full rounded-lg h-auto object-cover" />
+          <Image src={project.imageUrl} alt={project.alt} width={200} height={200} className="my-4 w-full rounded-lg h-auto object-cover" />
           <p className='text-black'>{project.description}</p>
         </div>
         <button onClick={handleClose} className="mt-4 bg-[#8f293a] text-white py-2 px-4 rounded hover:bg-[#6e2230] transition-transform duration-500"
