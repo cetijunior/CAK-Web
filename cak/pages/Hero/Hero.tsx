@@ -59,8 +59,6 @@ const Hero = () => {
         <Image
           src={isMobile ? HeroMobile : Hero1}
           alt="Hero Background"
-          objectFit="cover"
-          objectPosition="center"
           priority={true}
         />
       </div>
