@@ -3,6 +3,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import Offers from '../../components/Offers';
 import Image from 'next/image';
+import pic1 from '../../public/webdep.jpg';
 
 
 const Services: NextPage = () => {
@@ -30,7 +31,7 @@ const Services: NextPage = () => {
             <p className='mt-6 text-[#381d1d] sm:text-auto text-sm font-typewriter '>Unser Angebot umfasst die Bereitstellung und kontinuierliche Wartung Ihrer Website. Wir bieten zuverlässiges Hosting, regelmäßige Sicherheitsupdates und technischen Support, um sicherzustellen, dass Ihre Website stets online und reibungslos läuft. Mit unserem Service können Sie sich voll und ganz auf Ihr Geschäft konzentrieren. </p>
           </div>
           <Image
-            src={'/webdep.jpg'}
+            src={pic1}
             width={500}
             height={400}
             className='md:w-[45%] rounded-xl max-w-full drop-shadow-2xl' alt={''} />
