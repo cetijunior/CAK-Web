@@ -15,7 +15,11 @@ This is a website build in Collaboration with @archieQa @keniDervishaj
 
 
 [About Us]
+<<<<<<< HEAD
 ![Screenshot 2024-02-25 184754](https://github.com/cetijunior/CAK-Web/assets/78642663/35550bca-5518-4417-b383-86a57b2ad644)
+=======
+![Screenshot 2024-02-25 184754](https://github.com/cetijunior/CAK-Web/assets/78642663/b04f4871-89dd-4665-b06c-0595a40b6fe7)
+>>>>>>> 2a9405e0909937aeb83c2326c1e732738f4fef09
 
 
 [Contact Us]
