@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import background1 from '../public/background1.png';
+import background1 from '../public/hero.png';
 
 import ButtonSvg from '../public/button.svg'; // Ensure this is the correct path
 
