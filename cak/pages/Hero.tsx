@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-<<<<<<< HEAD
 import Hero1 from '../public/background1.jpg'; // Default large screen image
 import HeroMobile from '../public/background2.jpg'; // Smaller screen image
-=======
 import background1 from '../public/hero.png';
-
->>>>>>> 570dfdf9ab8661393f04158f2a75e92d1b98e9b5
 import ButtonSvg from '../public/button.svg'; // Ensure this is the correct path
 
 const Hero = () => {
