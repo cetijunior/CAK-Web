@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useState } from 'react';
-import { Phone, Map, Mail } from '@mui/icons-material';
+import { Phone, Mail } from '@mui/icons-material';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Footer from './Footer';
 
