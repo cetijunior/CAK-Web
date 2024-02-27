@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Phone, Map, Mail } from '@mui/icons-material';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import Footer from './Footer/Footer';
+import Footer from './Footer';
 import { Props } from 'next/script';
 
 type Inputs = {
