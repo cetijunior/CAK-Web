@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Hero1 from '../public/background1.png'; // Default large screen image
-import HeroMobile from '../public/background2.png'; // Smaller screen image
+//import Hero1 from '../public/background1.png'; // Default large screen image
+//import HeroMobile from '../public/background2.png'; // Smaller screen image
 import ButtonSvg from '../public/button.svg'; // Ensure this is the correct path
 
 const Hero = () => {
@@ -55,6 +55,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      {/*
       <div className={`relative ${isMobile ? 'sm:w-[200px] w-5/6 mt-[20px] h-[200px]' : `flex items-center ml-[-600px] justify-center relative h-full w-full`}`}>
         <Image
           src={isMobile ? HeroMobile : Hero1}
@@ -62,6 +63,7 @@ const Hero = () => {
           priority={true}
         />
       </div>
+      */}
     </section >
   );
 };
