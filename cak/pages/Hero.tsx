@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Hero1 from '../public/background1.jpg'; // Default large screen image
 import HeroMobile from '../public/background2.jpg'; // Smaller screen image
-import background1 from '../public/hero.png';
 import ButtonSvg from '../public/button.svg'; // Ensure this is the correct path
 
 const Hero = () => {
@@ -31,10 +30,9 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="bg-[#f8edeb] flex flex-col shadow-glow md:flex-row items-center justify-center min-h-screen mx-auto"
-    >
+      className="bg-[#f8edeb] flex flex-col shadow-glow md:flex-row items-center justify-evenly min-h-screen mx-auto">
       <div className="flex flex-col justify-center text-center md:text-left z-10">
-        <h1 className="text-4xl sm:text-8xl p-10 font-fuel font-bold text-[#932b2d] mb-4">
+        <h1 className="text-5xl sm:text-9xl p-10 font-fuel font-bold text-[#932b2d] mt-4">
           HERZLICHEN WILKOMMEN!
         </h1>
         <p className="text-xl sm:text-2xl text-[#381d1d] sm:pl-8 sm:p-auto p-4 font-typewriter w-[auto] sm:w-[600px]">
@@ -56,7 +54,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className={`relative ${isMobile ? 'sm:w-[200px] w-5/6 mt-[20px] h-[200px]' : `flex items-center ml-[-550px] justify-end relative h-full w-full`}`}>
+      <div className={`relative ${isMobile ? 'sm:w-[200px] w-5/6 mt-[20px] h-[200px]' : `flex items-center justify-end relative h-full w-full`}`}>
         <Image
           src={isMobile ? HeroMobile : Hero1}
           alt="Hero Background"
