@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Hero1 from '../public/background1.png'; // Default large screen image
-import HeroMobile from '../public/background2.png'; // Smaller screen image
+import background1 from '../public/background1.png';
+
 import ButtonSvg from '../public/button.svg'; // Ensure this is the correct path
 
 const Hero = () => {
@@ -55,13 +55,16 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className={`relative ${isMobile ? 'sm:w-[200px] w-5/6 mt-[20px] h-[200px]' : `flex items-center ml-[-600px] justify-center relative h-full w-full`}`}>
+      <div className='sm:ml-[-500px] ml-[0px] w-full h-auto'>
         <Image
-          src={isMobile ? HeroMobile : Hero1}
+          src={background1}
           alt="Hero Background"
+          layout="responsive"
+          width={2000} // These dimensions should match the aspect ratio of your image
+          height={1400} // Adjust the height according to the actual image's aspect ratio
+          objectFit="cover" // This ensures the image covers the area of the div, you can adjust as necessary
           priority={true}
-          width={isMobile ? 200 : 2000}
-          height={isMobile ? 200 : 1800}
+          className="sm:h-auto sm:rotate-0 sm:w-auto sm:mt-0 mt-[50px]"
         />
       </div>
     </section >
