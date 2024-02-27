@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
+    "@netlify/plugin-nextjs": "^4.41.3",
     "@nextui-org/card": "^2.0.24",
     "@nextui-org/react": "^2.2.9",
     "i18next": "^23.10.0",
