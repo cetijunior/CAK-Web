@@ -3,7 +3,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import Offers from '../components/Offers';
 import Image from 'next/image';
-import pic1 from '../../public/webdep.jpg';
+import pic1 from '../public/webdep.jpg';
 
 
 const Services: NextPage = () => {
