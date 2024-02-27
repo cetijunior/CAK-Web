@@ -19,21 +19,21 @@ export type Project = {
     },
     {
       id: 2,
-      title: 'Projekt Eins',
+      title: 'Projekt Zwei',
       imageUrl: '/template2.jpg', // Replace with your actual image path
       alt: 'Projekt 2',
       description: 'Das Design nutzt dunkle Töne für eine edle Ausstrahlung, ideal für ein gehobenes Restaurant. Klare Linien und hochwertige Bilder vermitteln Qualität und Stil, während die übersichtliche Struktur eine einfache Navigation ermöglicht.',
     },
     {
       id: 3,
-      title: 'Projekt Eins',
+      title: 'Projekt Drei',
       imageUrl: '/template3.jpg', // Replace with your actual image path
       alt: 'Projekt 3',
       description: 'Das Webseitendesign ist hell und freundlich, mit einem klaren Fokus auf Bio-Produkte. Die saubere Aufteilung und das frische Farbschema unterstreichen das gesunde und natürliche Angebot. Es eignet sich perfekt für Bio-Märkte oder Restaurants mit Schwerpunkt auf biologischer Küche.',
     },
     {
       id: 4,
-      title: 'Projekt Eins',
+      title: 'Projekt Vier',
       imageUrl: '/template4.jpg', // Replace with your actual image path
       alt: 'Projekt 4',
       description: 'Das elegante Webseitendesign mit cremefarbenen und marineblauen Tönen, klarer Typografie und viel Weißraum schafft eine exklusive Atmosphäre, ideal für Fisch- und Meeresfrüchterestaurants, wobei strukturierte Seiten und ansprechende Fotos das Menü und Ambiente betonen.',
