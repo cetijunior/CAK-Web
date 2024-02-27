@@ -37,6 +37,7 @@ const Offers: React.FC<OffersProps> = ({ children, isOpen, onClose }) => {
       opacity: isVisible ? 1 : 0,
       pointerEvents: isVisible ? 'auto' : 'none',
     }}>
+      <CloseIcon onClick={handleClose} className='md:top-56 md:right-2 md:w-12 md:h-12 cursor-pointer absolute top-16  right-2 lg:w-12 lg:h-12 lg:top-40 lg:right-[360px] text-[#5D1F20] bg-[#f8edeb] rounded-full' />
       <div style={{
         backgroundColor: '#f8edeb',
         marginTop: '80px',
@@ -52,7 +53,6 @@ const Offers: React.FC<OffersProps> = ({ children, isOpen, onClose }) => {
         pointerEvents: isVisible ? 'auto' : 'none',
       }}>
         {children}
-        <button className="text-white p-2 ml-2 mt-2 bg-[#381d1d] rounded-full" onClick={onClose}><CloseIcon /></button>
         <Card className='ml-2 mr-2 mt-2 md:mx-10 rounded-3xl drop-shadow-2xl overflow-hidden bg-[#e8e8e8]'>
           <CardHeader className='pt-2 px-4 flex-col items-start'>
             <p className='mt-2 text-4xl font-extrabold text-[#5D1F20] font-grimes '>Unser Angebot</p>
