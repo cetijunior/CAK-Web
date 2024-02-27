@@ -1,6 +1,6 @@
 const Footer: React.FC = () => {
 
-    const scrollToSection = (sectionId) => (e) => {
+    const scrollToSection = (sectionId: string) => (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         const section = document.querySelector(sectionId);
         if (section) {

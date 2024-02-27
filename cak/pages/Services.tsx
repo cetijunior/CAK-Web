@@ -1,8 +1,9 @@
 /* eslint-disable react/no-children-prop */
 import React from 'react';
 import { NextPage } from 'next';
-import Offers from '../../components/Offers';
+import Offers from '../components/Offers';
 import Image from 'next/image';
+import pic1 from '../public/webdep.jpg';
 
 
 const Services: NextPage = () => {
@@ -11,6 +12,7 @@ const Services: NextPage = () => {
   return (
     <section id='services' className='h-full bg-[#f8edeb] gap-8 p-5 pt-[250px] flex justify-center items-center sm:pt-20'>
       <div className='flex flex-col gap-10'>
+        <h1 className='text-4xl md:text-5xl font-bold text-[#932b2d] text-center font-grimes'>Unser Services</h1>
         <div className='md:gap-3 flex flex-col md:flex-row bg-transparent items-center justify-between p-5' >
           <div className='flex flex-col p-4 gap-4 sm:w-auto w-[280px] bg-[#e8e8e8] max-w-[550px] md:hover:rounded-2xl rounded-xl drop-shadow-2xl'>
             <h1 className='text-[#5d1f20] font-bold font-grimes text-xl md:text-3xl'>Webseiteentwicklung und Design</h1>
@@ -30,7 +32,7 @@ const Services: NextPage = () => {
             <p className='mt-6 text-[#381d1d] sm:text-auto text-sm font-typewriter '>Unser Angebot umfasst die Bereitstellung und kontinuierliche Wartung Ihrer Website. Wir bieten zuverlässiges Hosting, regelmäßige Sicherheitsupdates und technischen Support, um sicherzustellen, dass Ihre Website stets online und reibungslos läuft. Mit unserem Service können Sie sich voll und ganz auf Ihr Geschäft konzentrieren. </p>
           </div>
           <Image
-            src={'./webdep.jpg'}
+            src={pic1}
             width={500}
             height={400}
             className='md:w-[45%] rounded-xl max-w-full drop-shadow-2xl' alt={''} />
