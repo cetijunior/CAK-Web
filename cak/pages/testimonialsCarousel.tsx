@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { testimonials, Testimonial } from '../../components/testimonials'; // Adjust the import path as necessary
+import { testimonials, Testimonial } from '../components/testimonials'; // Adjust the import path as necessary
 
 const TestimonialsCarousel: React.FC = () => {
 
