@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Hero1 from '../../public/background1.png'; // Default large screen image
-import HeroMobile from '../../public/background 2.png'; // Smaller screen image
-import ButtonSvg from '../../public/button.svg'; // Ensure this is the correct path
+import Hero1 from '../public/background1.png'; // Default large screen image
+import HeroMobile from '../public/background 2.png'; // Smaller screen image
+import ButtonSvg from '../public/button.svg'; // Ensure this is the correct path
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
