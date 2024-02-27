@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { images, Image as ImageType } from '../../components/AboutUsDb'; // Adjust the import path
+import { images, Image as ImageType } from '../components/AboutUsDb'; // Adjust the import path
 
 const About = () => {
   const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
